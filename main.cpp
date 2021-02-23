@@ -1,7 +1,10 @@
 #include <iostream>
+#include "template.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "Goodbye, World!" << std::endl;
+    using std::cout;
+    using std::endl;
+    cout << "Hello, World!" << endl;
+    cout << "Goodbye, World!" << endl;
     return 0;
 }
