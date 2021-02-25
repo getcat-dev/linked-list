@@ -12,35 +12,17 @@ struct Node
     Node* pNext;
 };
 struct LinkedList {
-    Node *head = nullptr;
-    Node *tail = nullptr;
+    void push_front(){}
+    void push_back(){}
+    void get(){}
+    void pop_front(){}
+    void pop_back(){}
+    void size(){}
+    void print(){}
+private:
+    Node *head;
+    Node *tail;
     int size = 0;
-    void push_front(){
-
-    }
-    void push_back()
-    {
-
-    }
-    void get(){
-
-    }
-    void pop_front()
-    {
-
-    }
-    void pop_back()
-    {
-
-    }
-    void size()
-    {
-
-    }
-    void print()
-    {
-
-    }
 };
 
 #endif
