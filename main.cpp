@@ -1,10 +1,13 @@
 #include <iostream>
-#include "template.h"
-
+#include <ctime>
+#include "DataStruct.h"
+#include "LinkedList.h"
 int main() {
     using std::cout;
     using std::endl;
-    cout << "Hello, World!" << endl;
-    cout << "Goodbye, World!" << endl;
+    srand(time(NULL));
+    LinkedList a;
+
+
     return 0;
 }
