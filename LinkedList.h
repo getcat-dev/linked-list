@@ -43,8 +43,8 @@ struct LinkedList {
         {
             if(element == n)
             {
-                cout<< tmp->diploma.profession <<"\n" << tmp->diploma.gradeYear
-                    <<"\n"  << tmp->diploma.usabilityOfDiploma << "\n~~~~" << endl;
+                /*cout<< tmp->diploma.profession <<"\n" << tmp->diploma.gradeYear
+                        <<"\n"  << tmp->diploma.usabilityOfDiploma << "\n~~" << endl;*/
             }
             element++;
             tmp = tmp->pNext;
@@ -59,8 +59,8 @@ struct LinkedList {
     {
         if(head != nullptr)
         {
-            cout<< head->diploma.profession <<"\n" << head->diploma.gradeYear<<"\n"
-                << head->diploma.usabilityOfDiploma << "\n~~~~" << endl;
+            /*cout<< head->diploma.profession <<"\n" << head->diploma.gradeYear<<"\n"
+                        << head->diploma.usabilityOfDiploma << "\n" << endl;*/
             Node* tmp = nullptr;
             tmp = head;
             head = head->pNext;
@@ -77,8 +77,8 @@ struct LinkedList {
         Node * prevNode = nullptr;
         if(head != nullptr)
         {
-            cout<< head->diploma.profession <<"\n" << head->diploma.gradeYear<<"\n"
-                << head->diploma.usabilityOfDiploma << "\n~~~~" << endl;
+            /*cout<< head->diploma.profession <<"\n" << head->diploma.gradeYear<<"\n"
+                << head->diploma.usabilityOfDiploma << "\n" << endl;*/
             if(head->pNext)
             {
                 while(tmp->pNext)
@@ -130,15 +130,16 @@ struct LinkedList {
         while(tmp)
         {
             cout<< tmp->diploma.profession <<"\n" << tmp->diploma.gradeYear
-                <<"\n"  << tmp->diploma.usabilityOfDiploma << "\n~~~~" << endl;
+                <<"\n"  << tmp->diploma.usabilityOfDiploma << "\n~~" << endl;
             tmp = tmp->pNext;
         }
         delete tmp;
     }
     Node* findTail( )
     {
-        Node* tmp = head;
-        if(!tmp)
+        Node* tmp;
+        tmp = head;
+        if(!head)
         {
             return tmp;
         }
@@ -151,6 +152,7 @@ struct LinkedList {
             return tmp;
         }
     }
+
 private:
     Node *head = nullptr;
 };
